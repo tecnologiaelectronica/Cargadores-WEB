@@ -167,37 +167,6 @@
             font-size: 0.9rem;
         }
 
-        .testimonials {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .testimonials h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        .stars {
-            color: #ffd700;
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-
         .contact {
             padding: 80px 0;
             background: #fff;
@@ -367,30 +336,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Lo que dicen nuestros clientes</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Excelente calidad, mi laptop HP carga perfectamente. Muy recomendado."</p>
-                    <strong>- María González</strong>
-                </div>
-                <div class="testimonial">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Precio increíble comparado con el original. Funciona igual de bien."</p>
-                    <strong>- Carlos Ramírez</strong>
-                </div>
-                <div class="testimonial">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Entrega rápida y producto de calidad. Ya compré varios para la oficina."</p>
-                    <strong>- Ana López</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -439,7 +384,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.feature-card, .brand-item, .testimonial').forEach(el => {
+        document.querySelectorAll('.feature-card, .brand-item').forEach(el => {
             observer.observe(el);
         });
     </script>
